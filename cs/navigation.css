@@ -1,0 +1,22 @@
+.container {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+.container .top {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-bottom: 2%;
+  justify-content: space-between;
+}
+.container .top nav {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 2%;
+}
+.container .top nav a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 150%;
+}
