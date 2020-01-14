@@ -160,18 +160,28 @@ p {
   width: 100%;
   margin: 0 auto;
 }
-nav {
+.top {
+  padding-bottom: 2%;
+}
+.top h1 {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+}
+.top nav {
   display: flex;
   flex-direction: row;
-  padding-bottom: 2%;
-  justify-content: space-around;
-  align-items: center;
-  padding-top: 2%;
+  justify-content: space-evenly;
 }
-nav a {
+@media (max-width: 500px) {
+  .top nav {
+    width: 75%;
+  }
+}
+.top nav a {
+  font-size: 2em;
   text-decoration: none;
-  color: inherit;
-  font-size: 150%;
+  color: black;
 }
 footer {
   color: #22283B;
@@ -217,6 +227,8 @@ footer {
 .container .walk {
   margin-top: 10px;
   border-top: 1px solid #dee2e6;
+  display: flex;
+  justify-content: space-between;
 }
 @media (min-width: 500px) {
   .container .walk {
