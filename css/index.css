@@ -263,3 +263,14 @@ p {
   background-color: white;
   color: black;
 }
+@media (min-width: 500px) {
+  .sky {
+    display: none;
+  }
+  .launch {
+    display: none;
+  }
+  .blast {
+    width: 95%;
+  }
+}
