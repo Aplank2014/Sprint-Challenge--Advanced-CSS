@@ -175,7 +175,7 @@ p {
   padding: 1%;
   margin: 0 auto;
 }
-@media ( min-width: 500px ) {
+@media ( max-width: 500px ) {
   .top .links {
     width: 75%;
   }
@@ -214,7 +214,7 @@ footer {
 .container .space-images .blast {
   display: inherit;
 }
-@media ( min-width: 500px ) {
+@media ( max-width: 500px ) {
   .container .space-images .blast {
     width: 100%;
   }
@@ -222,7 +222,7 @@ footer {
 .container .space-images .sky {
   display: inherit;
 }
-@media ( min-width: 500px ) {
+@media ( max-width: 500px ) {
   .container .space-images .sky {
     display: none;
   }
@@ -230,7 +230,7 @@ footer {
 .container .space-images .launch {
   display: inherit;
 }
-@media ( min-width: 500px ) {
+@media ( max-width: 500px ) {
   .container .space-images .launch {
     display: none;
   }
@@ -262,19 +262,35 @@ footer {
   padding: 1%;
   margin-top: 20px;
   justify-content: center;
+  padding-bottom: 4%;
+}
+@media ( max-width: 500px ) {
+  .container .walk {
+    flex-direction: column-reverse;
+  }
 }
 .container .walk .walk-text {
   width: 45%;
+}
+@media ( max-width: 500px ) {
+  .container .walk .walk-text {
+    width: 100%;
+  }
 }
 .container .walk .walk-img {
   width: 45%;
   margin-left: 4%;
 }
+@media ( max-width: 500px ) {
+  .container .walk .walk-img {
+    width: 100%;
+  }
+}
 .container .walk .walk-img img {
   border-radius: 10px;
   width: 100%;
 }
-.container .btn {
+.btn {
   background-color: black;
   border: none;
   color: white;
@@ -285,7 +301,12 @@ footer {
   padding: 3%;
   border-radius: 10px;
 }
-.container .btn:hover {
+.btn:hover {
   background-color: white;
   color: black;
+}
+@media ( max-width: 500px ) {
+  .btn {
+    width: 100%;
+  }
 }

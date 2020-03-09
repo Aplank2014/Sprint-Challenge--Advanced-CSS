@@ -69,13 +69,22 @@
     .flex-layout(space-between, center);
     margin-top: 20px;
     justify-content: center;
+    padding-bottom: 4%;
+    @media @phone {
+      flex-direction: column-reverse;
+    }
     .walk-text {
      width: 45%;  
-     
+     @media @phone {
+       width: 100%;
+     }
 }
     .walk-img {
       width: 45%;
       margin-left: 4%;
+      @media @phone {
+        width: 100%;
+      }
      
       img{
         border-radius: 10px; 
@@ -84,7 +93,7 @@
       }
     }
   }
-
+}
 
 .btn {
     background-color: black;
@@ -99,5 +108,8 @@
       background-color:  white;
       color:  black;     
 }
+  @media @phone {
+    width: 100%;
+  }
 }
-}
+
