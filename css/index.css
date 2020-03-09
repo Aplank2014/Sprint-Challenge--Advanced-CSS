@@ -211,17 +211,26 @@ footer {
   display: flex;
   flex-wrap: wrap;
 }
+.container .space-images .blast {
+  display: inherit;
+}
 @media ( min-width: 500px ) {
-  .container .space-images {
-    display: flex;
+  .container .space-images .blast {
     width: 100%;
   }
-  .container .space-images .blast {
-    width: 90%;
-  }
+}
+.container .space-images .sky {
+  display: inherit;
+}
+@media ( min-width: 500px ) {
   .container .space-images .sky {
     display: none;
   }
+}
+.container .space-images .launch {
+  display: inherit;
+}
+@media ( min-width: 500px ) {
   .container .space-images .launch {
     display: none;
   }

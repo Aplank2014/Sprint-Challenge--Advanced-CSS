@@ -18,19 +18,26 @@
   .space-images {
     display: flex;
     flex-wrap: wrap;
+   
+   .blast {
+   display: inherit;
     @media @phone {
-      display: flex;
-      width: 100%;
-      .blast {
-        width: 90%;
+        width: 100%;
       }
-      .sky {
-        display: none;
+    }
+    .sky {
+    display: inherit;
+    @media @phone {
+      display: none;
       }
+    }
       .launch {
+        display: inherit;
+        @media @phone {
         display: none;
       }
     }
+  
     img {
       display: flex;
       width: 28%;
@@ -39,7 +46,7 @@
       height: 100%;
      
   } 
-}
+  }
 
   .visit-planets {
     padding: 15px;
