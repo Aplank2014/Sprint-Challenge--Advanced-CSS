@@ -1,8 +1,6 @@
 // Home Content
 
-.home {
-
-  .intro {
+.container {
 
     h2 {
       padding: 15px;
@@ -12,26 +10,53 @@
       padding:0 15px;
     }
   
+  .main-img {
+    width: 100%;
+    margin-bottom: 4%;
   }
 
   .space-images {
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
-
-    img {
-      width: 28%;
-      margin: 20px 2.5%;
-      border-radius: 20px;
-      height: 100%;
+   
+   .blast {
+   display: inherit;
+    @media @phone {
+        width: 100%;
+      }
     }
+    .sky {
+    display: inherit;
+    @media @phone {
+      display: none;
+      }
+    }
+      .launch {
+        display: inherit;
+        @media @phone {
+        display: none;
+      }
+    }
+  
+    img {
+      display: flex;
+      width: 28%;
+      margin: 20px 2%;
+      border-radius: 10px;
+      height: 100%;
+     
+  } 
   }
 
   .visit-planets {
     padding: 15px;
+    width: 100%;
 
     h3 {
       margin-top: 11px;
+      padding: 15px;
+      margin-left: 2%;
+      margin-bottom: 2%;
     }
 
     p {
@@ -40,36 +65,51 @@
   }
 
   .walk {
-    margin-top: 60px;
-    border-top: 1px solid @main-border-color;
-    padding: 50px 60px;
     display: flex;
+    .flex-layout(space-between, center);
+    margin-top: 20px;
     justify-content: center;
-
-    .walk-text {
-      width: 50%;
-
-      h3 {
-        margin-bottom: 10px;
-      }
-
-      p {
-        margin-bottom: 26px;
-      }
-
-      .btn {
-      }
+    padding-bottom: 4%;
+    @media @phone {
+      flex-direction: column-reverse;
     }
-
+    .walk-text {
+     width: 45%;  
+     @media @phone {
+       width: 100%;
+     }
+}
     .walk-img {
-      width: 46%;
+      width: 45%;
       margin-left: 4%;
-      
-      img {
+      @media @phone {
         width: 100%;
-        height: auto;
-        border-radius: 10px;
+      }
+     
+      img{
+        border-radius: 10px; 
+        width: 100%;
+        
       }
     }
   }
-}// home
+}
+
+.btn {
+    background-color: black;
+    border: none;
+    color: white;
+    .btn-layout(center, none);
+    display: inline-block;
+    font-size: 16px;
+    padding: 3%;
+    border-radius: 10px;
+    &:hover {
+      background-color:  white;
+      color:  black;     
+}
+  @media @phone {
+    width: 100%;
+  }
+}
+

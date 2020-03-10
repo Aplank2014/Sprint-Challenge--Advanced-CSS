@@ -160,31 +160,18 @@ p {
   width: 100%;
   margin: 0 auto;
 }
-.top {
-  padding-bottom: 2%;
-}
-.top h1 {
-  text-align: center;
-  font-size: 4rem;
-  padding-bottom: 3%;
-}
-.top .links {
+nav {
   display: flex;
-  justify-content: space-between;
+  flex-direction: row;
+  padding-bottom: 2%;
+  justify-content: space-around;
   align-items: center;
-  padding: 1%;
-  margin: 0 auto;
+  padding-top: 2%;
 }
-@media ( max-width: 500px ) {
-  .top .links {
-    width: 75%;
-  }
-}
-.top .links a {
-  font-size: 1.8em;
+nav a {
   text-decoration: none;
-  color: black;
-  margin: 0 auto;
+  color: inherit;
+  font-size: 150%;
 }
 footer {
   color: #22283B;
@@ -195,7 +182,6 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1%;
 }
 .container h2 {
   padding: 15px;
@@ -210,36 +196,12 @@ footer {
 .container .space-images {
   display: flex;
   flex-wrap: wrap;
-}
-.container .space-images .blast {
-  display: inherit;
-}
-@media ( max-width: 500px ) {
-  .container .space-images .blast {
-    width: 100%;
-  }
-}
-.container .space-images .sky {
-  display: inherit;
-}
-@media ( max-width: 500px ) {
-  .container .space-images .sky {
-    display: none;
-  }
-}
-.container .space-images .launch {
-  display: inherit;
-}
-@media ( max-width: 500px ) {
-  .container .space-images .launch {
-    display: none;
-  }
+  width: 100%;
 }
 .container .space-images img {
-  display: flex;
   width: 28%;
-  margin: 20px 2%;
-  border-radius: 10px;
+  margin: 20px 2.5%;
+  border-radius: 20px;
   height: 100%;
 }
 .container .visit-planets {
@@ -248,49 +210,26 @@ footer {
 }
 .container .visit-planets h3 {
   margin-top: 11px;
-  padding: 15px;
-  margin-left: 2%;
-  margin-bottom: 2%;
 }
 .container .visit-planets p {
   margin-top: 13px;
 }
 .container .walk {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1%;
-  margin-top: 20px;
-  justify-content: center;
-  padding-bottom: 4%;
+  margin-top: 10px;
+  border-top: 1px solid #dee2e6;
 }
-@media ( max-width: 500px ) {
+@media (min-width: 500px) {
   .container .walk {
-    flex-direction: column-reverse;
+    flex-direction: column;
   }
 }
-.container .walk .walk-text {
-  width: 45%;
+.container h3 {
+  margin-bottom: 10px;
 }
-@media ( max-width: 500px ) {
-  .container .walk .walk-text {
-    width: 100%;
-  }
+.container p {
+  margin-bottom: 26px;
 }
-.container .walk .walk-img {
-  width: 45%;
-  margin-left: 4%;
-}
-@media ( max-width: 500px ) {
-  .container .walk .walk-img {
-    width: 100%;
-  }
-}
-.container .walk .walk-img img {
-  border-radius: 10px;
-  width: 100%;
-}
-.btn {
+.container .btn {
   background-color: black;
   border: none;
   color: white;
@@ -298,15 +237,15 @@ footer {
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  padding: 3%;
+  padding: 2%;
+  border-radius: 2px;
+}
+.container .walk-img {
+  width: 40%;
+  margin-left: 2%;
+}
+.container .walk-img img {
+  width: 100%;
+  height: auto;
   border-radius: 10px;
-}
-.btn:hover {
-  background-color: white;
-  color: black;
-}
-@media ( max-width: 500px ) {
-  .btn {
-    width: 100%;
-  }
 }
